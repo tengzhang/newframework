@@ -25,4 +25,9 @@ public class UserServiceTest extends AbstractTestCase {
 
         userService.newUser(user);
     }
+
+    @Test
+    public void listAll() throws SSException {
+        userService.listAll();
+    }
 }

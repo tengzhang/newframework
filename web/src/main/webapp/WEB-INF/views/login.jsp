@@ -10,6 +10,9 @@
 <body>
     <div style="width: 25%; margin-left: auto; margin-right: auto;">
         <p style="margin: 0;">请登录</p>
+        <c:if test="${!empty eMsg}">
+            <p style="margin: 0; color: red;">${eMsg}</p>
+        </c:if>
         <form action="${website}login" method="post">
             用户名: <input type="text" name="userName" /> <br />
             密码： <input type="password" name="password" /> <br />

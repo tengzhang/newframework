@@ -35,7 +35,7 @@
     </dependencies>
 
     <build>
-        <finalName>juhui-service</finalName>
+        <finalName>newframework-service</finalName>
 
         <sourceDirectory>src/main/java/service</sourceDirectory>
 

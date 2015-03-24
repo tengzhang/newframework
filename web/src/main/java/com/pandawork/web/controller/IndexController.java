@@ -38,6 +38,7 @@ public class IndexController extends AbstractController {
                 model.addAttribute("user", user);
                 return "index";
             } else {
+                model.addAttribute("eMsg", "用户名或密码错误!");
                 return "login";
             }
         } catch (SSException e) {

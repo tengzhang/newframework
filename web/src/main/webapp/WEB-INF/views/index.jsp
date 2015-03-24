@@ -8,6 +8,6 @@
     <title>Insert title here</title>
 </head>
 <body>
-    <h1>${msg}</h1>
+    <h1>欢迎你，${user.userName}</h1>
 </body>
 </html>
