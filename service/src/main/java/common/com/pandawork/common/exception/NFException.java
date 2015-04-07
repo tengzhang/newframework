@@ -12,7 +12,9 @@ public enum  NFException implements IBizExceptionMes {
     SystemException("系统内部异常", 1),
 
     UserNameNotNull("用户名不能为空", 10001),
-    PasswordNotNull("密码不能为空", 10002);
+    PasswordNotNull("密码不能为空", 10002),
+    UserNameExist("用户名已存在", 10003),
+    GradeNameNotNull("年级名称不能为空", 10004);
 
     private String msg;
 

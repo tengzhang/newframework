@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.pandawork.mapper.GradeMapper">
+
+    <insert id="newGrade">
+        INSERT INTO `t_grade` (`name`) VALUE (#{grade.name})
+    </insert>
+
+    <update id="update">
+        UPDATE `t_grade`
+          SET `name` = #{grade.name}
+        WHERE `id` = #{grade.id}
+    </update>
+
+    <select id="queryById" resultMap="pw.Grade">
+        SELECT * FROM `t_grade` WHERE `id` = #{id}
+    </select>
+
+    <select id="listAll" resultMap="pw.Grade">
+        SELECT * FROM `t_grade`
+    </select>
+
+    <delete id="deleteById">
+        DELETE FROM `t_grade`
+          WHERE `id` = #{id}
+    </delete>
+</mapper>
